@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiUrl = 'https://localhost:5000'; 
+const apiUrl = 'http://localhost:5000'; // Replace with your backend server URL
 
 export const fetchSongs = createAsyncThunk('songs/fetchSongs', async () => {
   const response = await axios.get(`${apiUrl}/songs`);
