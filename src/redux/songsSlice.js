@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiUrl = 'https://jsonplaceholder.typicode.com'; // Replace with your backend server URL
+const apiUrl = 'https://localhost:5000'; 
 
 export const fetchSongs = createAsyncThunk('songs/fetchSongs', async () => {
   const response = await axios.get(`${apiUrl}/songs`);
