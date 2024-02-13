@@ -8,7 +8,6 @@ import SongList from './components/SongList';
 import AddSongForm from './components/AddSongForm';
 import EditSongForm from './components/EditSongForm';
 
-
 function App() {
   return (
     <Provider store={store}>
